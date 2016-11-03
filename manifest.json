@@ -1,0 +1,31 @@
+{
+  "name": "BYOB (Bring your Own Background)",
+  "short_name": "BYOB",
+  "version": "0.2",
+  "description": "This app, specially designed for Fondy High students, allows you to 'cover up' the wallpaper the school forces on you with one of your own choosing, you're welcome. Made by Nate Arkin and Eric Udlis. Please direct any complaints to Roland Faust: 920-889-0066 ~ ChangeLog: 0.1.8: 'Added: Dock Gui, Settings Cog Fixed: API and GUI Related things Removed: Unneeded vars",
+  "author": "Nate Arkin and Eric Udlis",
+  "manifest_version": 2,
+  "minimum_chrome_version": "31",
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+    {"fileSystem": ["retainEntries", "directory", "write"]},
+    "storage"
+  ],
+  "file_handlers": {
+    "text": {
+      "types": [
+          "image/*"
+      ]
+    }
+  },
+  "icons": {
+      "48": "Icon48.png",
+      "96": "Icon96.png",
+      "128": "Icon.png"
+  }
+
+}

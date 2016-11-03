@@ -1,0 +1,116 @@
+body {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    background: url('default.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-sze: cover;
+    background-size: cover;
+}
+.dropping {
+    background: #ffcc00;
+}
+nav {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+video {
+    width: 640px;
+    height: 480px;
+    background: rgb(0, 0, 0);
+}
+button {
+    display: inline-block;
+    background: -webkit-linear-gradient(#F9F9F9 40%, #E3E3E3 70%);
+    background: linear-gradient(#F9F9F9 40%, #E3E3E3 70%);
+    border: 1px solid #999;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+button:not(:disabled):hover {
+    border-color: black;
+}
+button:not(:disabled):active {
+    background: -webkit-linear-gradient(#E3E3E3 40%, #F9F9F9 70%);
+    background: linear-gradient(#E3E3E3 40%, #F9F9F9 70%);
+}
+input {
+    width: 100%;
+    -webkit-user-select: none;
+}
+input, textarea {
+    box-shadow: 1px 1px 5px #ccc inset;
+    border: none;
+    padding: 1em;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    outline: none;
+    padding: 1px;
+    font-size: 14pt;
+    padding: 1em;
+}
+output {
+    text-align: center;
+    padding: 1em;
+    display: block;
+}
+[readonly] {
+  background: #eee;
+}
+#settingsGUI {
+    display: none;
+    width: 80%;
+    height:40%;
+    margin-bottom:60%;
+    background-color: rgb(210, 215, 221);
+    margin-left:10%;
+    margin-right:10%;
+}
+#settingsGUI #chooseButton {
+    margin:20px;
+}
+#settingsGUI #exitButton{
+    display:block;
+    width:64px;
+}
+#dockActivator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10px;
+    /* removed background due to knowing it works */
+    display: block;
+}
+#dock {
+    width: 100px;
+    height: 500px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    opacity: .7;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -250px;
+    display: none;
+}
+#settingsCogButton {
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
